@@ -1,26 +1,48 @@
+
 ## React
 Default **ESLint**, **Stylelint** settings and packages in React applications.
 
 #### [ESLint](https://github.com/eslint/eslint "ESLint")
 ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+[Getting Started with ESLint](https://eslint.org/docs/user-guide/getting-started "Getting Started with ESLint")
 
-**Used Packages**
+Firstly you need to download the eslint package.
 ```
-npm install --save-dev eslint
-npm install --save-dev eslint-config-airbnb
-npm install --save-dev eslint-config-react-app
-npm install --save-dev eslint-plugin-flowtype
-npm install --save-dev eslint-plugin-import
-npm install --save-dev eslint-plugin-jest
-npm install --save-dev eslint-plugin-jsx-a11y
-npm install --save-dev eslint-plugin-react
+npm install eslint --save-dev
+```
+Than you need to init eslint.
+```
+npx eslint --init
+```
+After that you have to choose these options
+```
+------------------------------------------------------------------
+1- How would you like to use ESLint?
+To check syntax, find problems, and enforce code style
+------------------------------------------------------------------
+2- What type of modules does your project use?
+JavaScript modules (import/export)
+------------------------------------------------------------------
+3- Which framework does your project use?
+React
+------------------------------------------------------------------
+4- Does your project use TypeScript?
+**Depends to your project.
+------------------------------------------------------------------
+5- Where does your code run?
+Browser
+------------------------------------------------------------------
+6- How would you like to define a style for your project?
+Use a popular style guide
+------------------------------------------------------------------
+7- Which style guide do you want to follow? 
+Airbnb
+------------------------------------------------------------------
+8- What format do you want your config file to be in?
+JSON
+------------------------------------------------------------------
 ```
 
-You can use the command below to install all the packages at once.
-
-```
-npm install --save-dev eslint eslint-config-airbnb eslint-config-react-app eslint-plugin-flowtype eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-react
-```
 **Settings File**
 ```
 .eslintignore
